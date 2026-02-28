@@ -1,0 +1,70 @@
+@use '../styles/mixins' as *;
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 3.2rem 0 2.2rem;
+}
+
+.hero__tag {
+  display: inline-block;
+  margin: 0;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.hero__title {
+  margin: 0.8rem 0;
+  font-size: clamp(1.85rem, 4.8vw, 3rem);
+  line-height: 1.15;
+}
+
+.hero__copy {
+  margin: 0;
+  color: var(--muted);
+  max-width: 58ch;
+}
+
+.hero__actions {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero__link {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.hero__media {
+  margin: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+@include tablet {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 2.3rem;
+  }
+}
+
+@include mobile {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+  }
+
+  .hero__actions {
+    flex-wrap: wrap;
+  }
+}
