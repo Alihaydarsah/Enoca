@@ -1,0 +1,31 @@
+@use '../styles/mixins' as *;
+
+.input-field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.input-field__label {
+  font-weight: 700;
+}
+
+.input-field__control {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  padding: 0.65rem 0.75rem;
+  background-color: var(--surface);
+  color: var(--text);
+
+  @include focus-ring;
+}
+
+.input-field__control--error {
+  border-color: var(--danger);
+}
+
+.input-field__error {
+  margin: 0;
+  color: var(--danger);
+  font-size: 0.9rem;
+}

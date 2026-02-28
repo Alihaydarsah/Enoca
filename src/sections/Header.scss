@@ -1,0 +1,44 @@
+@use '../styles/mixins' as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0;
+}
+
+.header__brand {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+    color: var(--muted);
+    font-weight: 700;
+  }
+}
+
+@include mobile {
+  .header__nav-list {
+    display: none;
+  }
+}

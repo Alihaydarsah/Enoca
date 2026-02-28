@@ -1,0 +1,80 @@
+@use './variables';
+@use './mixins' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(19, 181, 162, 0.18), transparent 36%),
+    radial-gradient(circle at 10% 88%, rgba(0, 107, 95, 0.18), transparent 30%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.section-title {
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.section-copy {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  max-width: 62ch;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -40px;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  z-index: 1000;
+
+  &:focus {
+    top: 1rem;
+  }
+}
+
+@include mobile {
+  .container {
+    width: min(1120px, calc(100% - 1.25rem));
+  }
+}

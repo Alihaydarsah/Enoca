@@ -1,0 +1,32 @@
+$bp-mobile-max: 640px;
+$bp-tablet-min: 641px;
+$bp-tablet-max: 1024px;
+$bp-desktop-min: 1025px;
+
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --surface-alt: #eef2f5;
+  --text: #141b22;
+  --muted: #506272;
+  --primary: #006b5f;
+  --primary-strong: #005047;
+  --border: #d3dde3;
+  --focus: #0e9f8f;
+  --danger: #c73535;
+  --shadow: 0 10px 24px rgba(20, 27, 34, 0.08);
+}
+
+[data-theme='dark'] {
+  --bg: #0f141a;
+  --surface: #151d25;
+  --surface-alt: #1c2730;
+  --text: #e9eff4;
+  --muted: #9bb0bf;
+  --primary: #13b5a2;
+  --primary-strong: #0f9686;
+  --border: #2c3a45;
+  --focus: #59d8ca;
+  --danger: #ff7878;
+  --shadow: 0 14px 26px rgba(0, 0, 0, 0.35);
+}
