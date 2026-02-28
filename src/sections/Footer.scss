@@ -1,0 +1,22 @@
+.footer {
+  border-top: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+
+  p {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  a {
+    color: var(--muted);
+    font-weight: 700;
+  }
+}
