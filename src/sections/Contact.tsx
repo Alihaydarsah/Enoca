@@ -22,7 +22,7 @@ function Contact({ values, errors, submitted, onChange, onSubmit }: ContactProps
   return (
     <section id="contact" className="contact container" aria-labelledby="contact-title">
       <h2 id="contact-title" className="section-title">
-        İletisim
+        İletişim
       </h2>
       <p className="section-copy">Form alanlarını doldurup bize ulaşabilirsiniz.</p>
       <form className="contact__form" onSubmit={onSubmit} noValidate>

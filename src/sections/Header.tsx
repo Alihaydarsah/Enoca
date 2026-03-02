@@ -12,7 +12,7 @@ function Header({ theme, onToggleTheme }: HeaderProps) {
     <header className="header">
       <div className="container header__inner">
         <a className="header__brand" href="#hero">
-          Enoca Mini Landing
+          Enoca Challenge
         </a>
         <nav aria-label="Ana menü">
           <ul className="header__nav-list">
