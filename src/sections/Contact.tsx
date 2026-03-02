@@ -24,7 +24,7 @@ function Contact({ values, errors, submitted, onChange, onSubmit }: ContactProps
       <h2 id="contact-title" className="section-title">
         Iletisim
       </h2>
-      <p className="section-copy">Form alanlarını doldurup bize ulaşabilirsin.</p>
+      <p className="section-copy">Form alanlarını doldurup bize ulaşabilirsiniz.</p>
       <form className="contact__form" onSubmit={onSubmit} noValidate>
         <Input
           id="name"
@@ -71,7 +71,7 @@ function Contact({ values, errors, submitted, onChange, onSubmit }: ContactProps
           </Button>
           {submitted ? (
             <p className="contact__success" role="status">
-              Form basarıyla gönderildi.
+              Form başarıyla gönderildi.
             </p>
           ) : null}
         </div>

@@ -20,7 +20,7 @@ function Pricing({ plans, onSelectPlan }: PricingProps) {
   return (
     <section id="pricing" className="pricing container" aria-labelledby="pricing-title">
       <h2 id="pricing-title" className="section-title">
-        Fiyat Kartlari
+        Fiyat Kartları
       </h2>
       <p className="section-copy">İhtiyaca göre başlangıç, ekip ve kurumsal paket seçenekleri.</p>
       <div className="pricing__grid">
@@ -30,7 +30,7 @@ function Pricing({ plans, onSelectPlan }: PricingProps) {
             title={plan.name}
             subtitle={plan.info}
             highlighted={Boolean(plan.highlighted)}
-            footer={<Button onClick={() => onSelectPlan(plan)}>Paketi sec</Button>}
+            footer={<Button onClick={() => onSelectPlan(plan)}>Paketi seç</Button>}
           >
             <p className="pricing__price">{plan.price}</p>
             <ul className="pricing__list">

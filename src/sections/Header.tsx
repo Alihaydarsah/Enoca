@@ -26,7 +26,7 @@ function Header({ theme, onToggleTheme }: HeaderProps) {
               <a href="#faq">SSS</a>
             </li>
             <li>
-              <a href="#contact">İletisim</a>
+              <a href="#contact">İletişim</a>
             </li>
           </ul>
         </nav>

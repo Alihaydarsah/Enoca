@@ -84,7 +84,7 @@ function App() {
   }, [theme])
 
   const modalTitle = useMemo(
-    () => (selectedPlan ? `${selectedPlan.name} paketi secildi` : 'Bilgi penceresi'),
+    () => (selectedPlan ? `${selectedPlan.name} paketi seçildi` : 'Bilgi penceresi'),
     [selectedPlan],
   )
 
@@ -151,7 +151,7 @@ function App() {
       <Modal isOpen={isModalOpen} title={modalTitle} onClose={() => setIsModalOpen(false)}>
         <p>
           {selectedPlan
-            ? `${selectedPlan.name} paketini seçmeye hazırsın. İletisim formunu doldurarak kayıt sürecini başlatabilirsin.`
+            ? `${selectedPlan.name} paketini seçmeye hazırsın. İletişim formunu doldurarak kayıt sürecini başlatabilirsin.`
             : 'Kısa ürün tanıtım landingi ve bileşen kütüphanesi hazır.'}
         </p>
       </Modal>

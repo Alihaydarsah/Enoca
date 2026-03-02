@@ -14,7 +14,7 @@ function Hero({ onOpenModal }: HeroProps) {
           Modern, erişilebilir ve yeniden kullanılabilir React arayüzü
         </h1>
         <p className="hero__copy">
-          Hero, Özellikler, Fiyat, SSS ve İletisim bölümlerini tek sayfada topladım.
+          Hero, Özellikler, Fiyat, SSS ve İletişim bölümlerini tek sayfada topladım.
           Bileşen kütüphanesi ile aynı parçaları farklı yerlerde tekrar kullanabiliyoruz.
         </p>
         <div className="hero__actions">
