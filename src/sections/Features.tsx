@@ -4,19 +4,19 @@ import './Features.scss'
 const features = [
   {
     title: 'Semantik HTML',
-    subtitle: 'a11y odakli',
+    subtitle: 'a11y odaklı',
     content:
-      'Header, main, section ve footer yapisi ile ekran okuyucu uyumlulugu korunur.',
+      'Header, main, section ve footer yapısı ile ekran okuyucu uyumluluğu korunur.',
   },
   {
-    title: 'Bilesen Kutuphanesi',
-    subtitle: '5 cekirdek bilesen',
-    content: 'Button, Input, Card, Modal ve Accordion ayri dosyalarda tekrar kullanilir.',
+    title: 'Bileşen Kütüphanesi',
+    subtitle: '5 çekirdek bileşen',
+    content: 'Button, Input, Card, Modal ve Accordion ayrı dosyalarda tekrar kullanılır.',
   },
   {
     title: 'Responsive Mimari',
     subtitle: '3 breakpoint',
-    content: '640, 641-1024 ve 1025+ araliklarinda grid/flex duzeni sorunsuz calisir.',
+    content: '640, 641-1024 ve 1025+ aralıklarında grid/flex düzeni sorunsuz çalışır.',
   },
 ]
 
@@ -24,10 +24,10 @@ function Features() {
   return (
     <section id="features" className="features container" aria-labelledby="features-title">
       <h2 id="features-title" className="section-title">
-        Ozellikler
+        Özellikler
       </h2>
       <p className="section-copy">
-        Projede kurallar dokumanina uygun olarak sade ama genisletilebilir bir temel olusturduk.
+        Projede kurallara uygun olarak sade ama genişletilebilir bir temel oluşturdum.
       </p>
       <div className="features__grid">
         {features.map((feature) => (

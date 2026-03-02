@@ -30,23 +30,23 @@ const plans: Plan[] = [
     id: 'starter',
     name: 'Starter',
     price: '399 TL / ay',
-    info: 'Kisisel kullanim',
-    features: ['1 proje', 'Temel destek', 'Haftalik rapor'],
+    info: 'Kişisel kullanım',
+    features: ['1 proje', 'Temel destek', 'Haftalık rapor'],
   },
   {
     id: 'team',
     name: 'Team',
     price: '899 TL / ay',
-    info: 'Kucuk ekipler',
-    features: ['5 proje', 'Oncelikli destek', 'Gelismis raporlama'],
+    info: 'Küçük ekipler',
+    features: ['5 proje', 'Öncelikli destek', 'Gelişmiş raporlama'],
     highlighted: true,
   },
   {
     id: 'enterprise',
     name: 'Enterprise',
     price: 'Teklif al',
-    info: 'Kurumsal cozum',
-    features: ['Sinirsiz proje', 'Ozel SLA', 'Danismanlik'],
+    info: 'Kurumsal çözüm',
+    features: ['Sınırsız proje', 'Özel SLA', 'Danışmanlık'],
   },
 ]
 
@@ -54,17 +54,17 @@ function validateContact(values: ContactValues): ContactErrors {
   const errors: ContactErrors = {}
 
   if (!values.name.trim()) {
-    errors.name = 'Ad Soyad alani bos birakilamaz.'
+    errors.name = 'Ad Soyad alanı boş bırakılamaz.'
   }
 
   if (!values.email.trim()) {
-    errors.email = 'E-posta alani bos birakilamaz.'
+    errors.email = 'E-posta alanı boş bırakılamaz.'
   } else if (!emailRegex.test(values.email)) {
-    errors.email = 'Lutfen gecerli bir e-posta adresi gir.'
+    errors.email = 'Lütfen geçerli bir e-posta adresi gir.'
   }
 
   if (!values.message.trim()) {
-    errors.message = 'Mesaj alani bos birakilamaz.'
+    errors.message = 'Mesaj alanı boş bırakılamaz.'
   }
 
   return errors
@@ -128,7 +128,7 @@ function App() {
   return (
     <>
       <a href="#main-content" className="skip-link">
-        Icerige atla
+        İçeriğe Atla
       </a>
       <Header
         theme={theme}
@@ -151,8 +151,8 @@ function App() {
       <Modal isOpen={isModalOpen} title={modalTitle} onClose={() => setIsModalOpen(false)}>
         <p>
           {selectedPlan
-            ? `${selectedPlan.name} paketini secmeye hazirsin. Iletisim formunu doldurarak kayit surecini baslatabilirsin.`
-            : 'Kisa urun tanitim landingi ve bilesen kutuphanesi hazir.'}
+            ? `${selectedPlan.name} paketini seçmeye hazırsın. İletisim formunu doldurarak kayıt sürecini başlatabilirsin.`
+            : 'Kısa ürün tanıtım landingi ve bileşen kütüphanesi hazır.'}
         </p>
       </Modal>
     </>

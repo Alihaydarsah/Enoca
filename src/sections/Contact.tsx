@@ -24,13 +24,13 @@ function Contact({ values, errors, submitted, onChange, onSubmit }: ContactProps
       <h2 id="contact-title" className="section-title">
         Iletisim
       </h2>
-      <p className="section-copy">Form alanlarini doldurup bize ulasabilirsin.</p>
+      <p className="section-copy">Form alanlarını doldurup bize ulaşabilirsin.</p>
       <form className="contact__form" onSubmit={onSubmit} noValidate>
         <Input
           id="name"
           label="Ad Soyad"
           value={values.name}
-          placeholder="Ornek: Ali Haydar Sah"
+          placeholder="Örnek: Ali Haydar Şah"
           error={errors.name}
           required
           onChange={(value) => onChange('name', value)}
@@ -53,7 +53,7 @@ function Contact({ values, errors, submitted, onChange, onSubmit }: ContactProps
             id="message"
             className={`contact__textarea ${errors.message ? 'contact__textarea--error' : ''}`}
             value={values.message}
-            placeholder="Kisa bir mesaj yaz..."
+            placeholder="Kısa bir mesaj yaz..."
             aria-invalid={Boolean(errors.message)}
             aria-describedby={errors.message ? 'message-error' : undefined}
             onChange={(event) => onChange('message', event.target.value)}
@@ -71,7 +71,7 @@ function Contact({ values, errors, submitted, onChange, onSubmit }: ContactProps
           </Button>
           {submitted ? (
             <p className="contact__success" role="status">
-              Form basariyla gonderildi.
+              Form basarıyla gönderildi.
             </p>
           ) : null}
         </div>

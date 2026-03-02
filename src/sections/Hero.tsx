@@ -9,30 +9,30 @@ function Hero({ onOpenModal }: HeroProps) {
   return (
     <section id="hero" className="hero container" aria-labelledby="hero-title">
       <div>
-        <p className="hero__tag">4 is gununde teslime uygun mini landing yapisi</p>
+        <p className="hero__tag">Enoca Front End</p>
         <h1 id="hero-title" className="hero__title">
-          Modern, erisilebilir ve yeniden kullanilabilir React arayuzu
+          Modern, erişilebilir ve yeniden kullanılabilir React arayüzü
         </h1>
         <p className="hero__copy">
-          Hero, Ozellikler, Fiyat, SSS ve Iletisim bolumlerini tek sayfada topladik.
-          Bilesen kutuphanesi ile ayni parcalari farkli yerlerde tekrar kullanabiliyoruz.
+          Hero, Özellikler, Fiyat, SSS ve İletisim bölümlerini tek sayfada topladım.
+          Bileşen kütüphanesi ile aynı parçaları farklı yerlerde tekrar kullanabiliyoruz.
         </p>
         <div className="hero__actions">
           <Button size="lg" onClick={onOpenModal}>
             Hemen dene
           </Button>
           <a className="hero__link" href="#pricing">
-            Paketleri gor
+            Paketleri gör
           </a>
         </div>
       </div>
       <figure className="hero__media">
         <img
-          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1080&q=80"
-          alt="Kod editoru ekrani"
+          src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=900&q=80"
+          alt="Modern calisma ortami ve bilgisayar"
           loading="lazy"
-          width="1080"
-          height="720"
+          width="900"
+          height="600"
         />
       </figure>
     </section>

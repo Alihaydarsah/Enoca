@@ -22,7 +22,7 @@ function Pricing({ plans, onSelectPlan }: PricingProps) {
       <h2 id="pricing-title" className="section-title">
         Fiyat Kartlari
       </h2>
-      <p className="section-copy">Ihtiyaca gore baslangic, ekip ve kurumsal paket secenekleri.</p>
+      <p className="section-copy">İhtiyaca göre başlangıç, ekip ve kurumsal paket seçenekleri.</p>
       <div className="pricing__grid">
         {plans.map((plan) => (
           <Card

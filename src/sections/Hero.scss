@@ -45,16 +45,29 @@
 
 .hero__media {
   margin: 0;
+  width: min(360px, 100%);
+  justify-self: end;
   border-radius: 1rem;
   overflow: hidden;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
+
+  img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
 }
 
 @include tablet {
   .hero {
     grid-template-columns: 1fr;
     padding-top: 2.3rem;
+  }
+
+  .hero__media {
+    justify-self: start;
+    width: min(420px, 100%);
   }
 }
 
@@ -66,5 +79,11 @@
 
   .hero__actions {
     flex-wrap: wrap;
+  }
+
+  .hero__media {
+    width: min(320px, 100%);
+    justify-self: center;
+    margin-inline: auto;
   }
 }
