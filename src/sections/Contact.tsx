@@ -22,7 +22,7 @@ function Contact({ values, errors, submitted, onChange, onSubmit }: ContactProps
   return (
     <section id="contact" className="contact container" aria-labelledby="contact-title">
       <h2 id="contact-title" className="section-title">
-        Iletisim
+        İletisim
       </h2>
       <p className="section-copy">Form alanlarını doldurup bize ulaşabilirsiniz.</p>
       <form className="contact__form" onSubmit={onSubmit} noValidate>
@@ -67,7 +67,7 @@ function Contact({ values, errors, submitted, onChange, onSubmit }: ContactProps
         </div>
         <div className="contact__actions">
           <Button type="submit" size="lg">
-            Gonder
+            Gönder
           </Button>
           {submitted ? (
             <p className="contact__success" role="status">
