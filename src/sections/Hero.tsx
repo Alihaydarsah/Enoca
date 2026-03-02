@@ -10,7 +10,7 @@ function Hero({ onOpenModal }: HeroProps) {
     <section id="hero" className="hero container" aria-labelledby="hero-title">
       <div className="hero__banner">
         <div className="hero__overlay">
-          <p className="hero__tag">Enoca Front End</p>
+          <p className="hero__tag">Enoca Frontend</p>
           <h1 id="hero-title" className="hero__title">
             Modern, erişilebilir ve yeniden kullanılabilir React arayüzü
           </h1>
